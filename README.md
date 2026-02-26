@@ -569,6 +569,7 @@ Além dos 5 problemas obrigatórios, a implementação inclui funcionalidades ad
 
 
 ![Configuração do Context](img/context.png) 
+![Configuração do Context](img/context1.png) 
 
 ---
 
