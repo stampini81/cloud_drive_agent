@@ -660,8 +660,6 @@ O agente foi testado diretamente no **Agentforce Builder** (Agent Preview) cobri
 
 ## 📸 Screenshots
 
-> **Instrução:** Coloque seus prints na pasta `img/` na raiz do projeto e eles serão referenciados abaixo.
-
 ### Configuração do Agent
 
 
