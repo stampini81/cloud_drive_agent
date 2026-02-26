@@ -85,15 +85,15 @@ A solução foi projetada seguindo uma arquitetura modular com separação clara
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    AGENTFORCE BUILDER                          │
+│                    AGENTFORCE BUILDER                           │
 │                                                                 │
-│  ┌──────────────────────────────────────────────────────────┐  │
-│  │                CloudDrive Assistant (Bot)                │  │
-│  │                    Role + Instructions                   │  │
-│  └──────────────┬───────────────────────────┬───────────────┘  │
+│  ┌──────────────────────────────────────────────────────────┐   │
+│  │                CloudDrive Assistant (Bot)                │   │
+│  │                    Role + Instructions                   │   │
+│  └──────────────┬───────────────────────────┬───────────────┘   │
 │                 │                           │                   │
-│  ┌──────────────▼──────────┐  ┌────────────▼────────────────┐  │
-│  │      TOPICS (5)          │  │     VARIÁVEIS DE CONTEXTO   │  │
+│  ┌──────────────▼──────────┐  ┌────────────▼──────────────── ┐  │
+│  │      TOPICS (5)         │  │     VARIÁVEIS DE CONTEXTO    │  │
 │  │                         │  │                              │  │
 │  │ • Vehicle Availability  │  │ • customerEmail              │  │
 │  │   Search                │  │ • currentRecordId            │  │
@@ -103,10 +103,10 @@ A solução foi projetada seguindo uma arquitetura modular com separação clara
 │  │ • Policy Information    │  │                              │  │
 │  │ • Customer Registration │  │                              │  │
 │  └──────────┬──────────────┘  └──────────────────────────────┘  │
-│             │                                                    │
+│             │                                                   │
 │  ┌──────────▼──────────────────────────────────────────────┐    │
-│  │            ACTIONS (10 Apex Invocable Methods)           │    │
-│  │                                                          │    │
+│  │            ACTIONS (10 Apex Invocable Methods)          │    │
+│  │                                                         │    │
 │  │ • Buscar_Veiculos_Disponiveis_V2  →  Apex Invocable     │    │
 │  │ • Get_Reservation_Status          →  Apex Invocable     │    │
 │  │ • Create Support Ticket           →  Apex Invocable     │    │
@@ -118,18 +118,18 @@ A solução foi projetada seguindo uma arquitetura modular com separação clara
 │  │ • Get Customer Context            →  Apex Invocable     │    │
 │  │ • Create Vehicle Reservation      →  Apex Invocable     │    │
 │  └──────────┬──────────────────────────────────────────────┘    │
-│             │                                                    │
-└─────────────┼────────────────────────────────────────────────────┘
+│             │                                                   │
+└─────────────┼───────────────────────────────────────────────────┘
               │
-┌─────────────▼────────────────────────────────────────────────────┐
+┌─────────────▼─────────────────────────────────────────────── ─────┐
 │                      APEX LAYER (Backend)                         │
-│                                                                    │
+│                                                                   │
 │  ┌────────────────────────┐  ┌──────────────────────────────┐     │
-│  │ CloudDriveVehicleActions│  │ CloudDriveReservationActions │     │
+│  │ CloudDriveVehicleActions│  │ CloudDriveReservationActions│     │
 │  │ (Busca de veículos)    │  │ (Criação de reservas)        │     │
 │  └────────────────────────┘  └──────────────────────────────┘     │
 │  ┌────────────────────────┐  ┌──────────────────────────────┐     │
-│  │ CloudDriveSupportActions│  │ CloudDrivePolicyActions      │     │
+│  │ CloudDriveSupportActions│  │ CloudDrivePolicyActions     │     │
 │  │ (Abertura de chamados) │  │ (Políticas e preços)         │     │
 │  └────────────────────────┘  └──────────────────────────────┘     │
 │  ┌────────────────────────┐  ┌──────────────────────────────┐     │
@@ -149,12 +149,12 @@ A solução foi projetada seguindo uma arquitetura modular com separação clara
 │  │ BookingTrigger         │  │ (Escalação para humanos)     │     │
 │  │ (Auto-confirma reserva)│  └──────────────────────────────┘     │
 │  └────────────────────────┘                                       │
-│                                                                    │
+│                                                                   │
 │  ┌─────────────────────────────────────────────────────────────┐  │
-│  │                    SALESFORCE DATABASE                       │  │
+│  │                    SALESFORCE DATABASE                      │  │
 │  │  Contact | Vehicle__c | Reservation__c | Case | Feedback__c │  │
 │  └─────────────────────────────────────────────────────────────┘  │
-└────────────────────────────────────────────────────────────────────┘
+└───────────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -282,8 +282,6 @@ Veículos disponíveis em São Paulo de 27/02/2026 até 28/02/2026:
 **Status:** Novo
 **Assunto:** Cobrança duplicada [Reserva: RES-12345678]
 **Prioridade:** High
-
----
 
 Nossa equipe de suporte analisará seu caso e entrará em contato em até **24 horas**.
 
