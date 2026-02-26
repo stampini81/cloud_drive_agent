@@ -1057,7 +1057,7 @@ public with sharing class CloudDriveCustomerRegistration {
 }
 ```
 
- ![Action - Register Customer](img/action_register_customer.png) 
+
  ![Action - Register Customer](img/action_register_customer1.png)
  ![Action - Register Customer](img/action_register_customer2.png)  
  ![Action - Register Customer](img/action_register_customer3.png)   
