@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Busca veiculos disponiveis por cidade e datas. Recebe city (String), startDate (String YYYY-MM-DD, obrigatorio), endDate (opcional), vehicleCategory (opcional). Retorna formattedResponse com lista de veiculos. Apresente ao cliente e pergunte qual deseja reservar.</description>
+    <developerName>Buscar_Veiculos_Disponiveis_V2</developerName>
+    <invocationTarget>CloudDriveVehicleActions</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <localDeveloperName>Buscar_Veiculos_Disponiveis_V2</localDeveloperName>
+    <masterLabel>Buscar Veiculos Disponiveis V2</masterLabel>
+    <progressIndicatorMessage>Buscando veiculos disponiveis...</progressIndicatorMessage>
+</GenAiFunction>

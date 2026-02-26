@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Consulta uma reserva de veiculo pelo numero de confirmacao. Retorna detalhes e status atual da reserva.</description>
+    <developerName>Get_Reservation_Status</developerName>
+    <invocationTarget>CloudDriveReservationQuery</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <localDeveloperName>Get_Reservation_Status</localDeveloperName>
+    <masterLabel>Get Reservation Status</masterLabel>
+    <progressIndicatorMessage>Consultando reserva...</progressIndicatorMessage>
+</GenAiFunction>

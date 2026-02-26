@@ -1,0 +1,35 @@
+{
+  "required" : [ "city", "startDate" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "city" : {
+      "title" : "City",
+      "description" : "City name to search for available vehicles (e.g. Sao Paulo, Rio de Janeiro)",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "endDate" : {
+      "title" : "End Date",
+      "description" : "Rental end date in format YYYY-MM-DD or DD/MM/YYYY. Defaults to next day if blank.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "startDate" : {
+      "title" : "Start Date",
+      "description" : "Rental start date in format YYYY-MM-DD or DD/MM/YYYY. For tomorrow use next day date.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "vehicleCategory" : {
+      "title" : "Vehicle Category",
+      "description" : "Category: SUV, Sedan, Luxury, Van or Electric",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

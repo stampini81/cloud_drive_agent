@@ -1,0 +1,14 @@
+{
+  "required" : [ "reservationNumber" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "reservationNumber" : {
+      "title" : "Reservation Number",
+      "description" : "Numero da reserva para consultar (ex: R-001). Obrigatorio.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}
